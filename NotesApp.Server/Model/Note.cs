@@ -14,6 +14,7 @@ namespace NotesApp.Server.Model
 
     public class NoteDTO
     { 
+        public long Id { get; set; }
         public string Title { get; set; }
         public string BodyText { get; set; }
     }

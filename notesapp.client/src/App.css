@@ -1,19 +1,38 @@
-﻿#root {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 2rem;
-    text-align: center;
+﻿@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    background-color: white;
+    font-family: "Montserrat", sans-serif;
 }
 
-tr:nth-child(even) {
-    background: #F2F2F2;
+#form_newnote {
+    width: 30%;
+    margin: auto auto;
 }
 
-tr:nth-child(odd) {
-    background: #FFF;
+@media only screen and (max-width: 768px) {
+    #form_newnote {
+        width: 70%;
+        margin: auto auto;
+    }
 }
 
-th, td {
-    padding-left: 1rem;
-    padding-right: 1rem;
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    #form_newnote {
+        width: 50%;
+        margin: auto auto;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    #form_newnote {
+        width: 30%;
+        margin: auto auto;
+    }
+}
+
+.hr {
+    width: 80%; 
+    margin: 30px auto;
 }
